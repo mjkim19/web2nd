@@ -12,6 +12,8 @@
         }
 
         .top_left {
+            overflow: hidden;
+            background-image: url(chef_about.png);
             width: 750px;
             height: 500px;
             float: left;
@@ -33,7 +35,12 @@
             padding: 20px;            
             background-color: green;
             opacity: 0.5;
-            margin-top: -250px;
+            margin-top: 250px;
+        }
+
+        .top_box > span {
+            font-size: 18px;
+            font-weight: bold;
         }
 
         #box_all {            
@@ -47,11 +54,30 @@
             float: left;
         }
 
-        .box {
+        .box:nth-child(odd) {
             width: 210px;
             height: 210px;
             padding: 20px;
             float: left;
+            background-color:rgb(97, 70, 44)
+        }
+
+        .box:nth-child(odd) > .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .box:nth-child(even) {
+            width: 210px;
+            height: 210px;
+            padding: 20px;
+            float: left;
+            background-color: orangered;
+        }
+
+        .box:nth-child(even) >.title {
+            font-size: 18px;
+            font-weight: bold;
         }
 
         .box_right {
@@ -90,9 +116,8 @@
 <body>
     <div id="top">
         <div class="top_left">
-            <img src="chef_about.png">
             <div class="top_box">
-                <font size=4><strong>GLOBAL<br>BUSINESS</strong></font><br><br>
+                <span>GLOBAL<br>BUSINESS</span><br><br>
                 asdfasdfasdf asdf asdf asdfasdfasdf<br>
                 asdfasdfasdf<br>
                 asdfa asdf asdf asdf<br>
@@ -105,20 +130,18 @@
     </div>
     <div id="box_all">
         <div class="box_left">
-            <div class="box" style="background-color:rgb(97, 70, 44)">
-                <font size=4><strong>TITLE</strong></font><br>
-                asdfasdfasdf asdf asd as asdfaasdf<br>
-                asdf asdf asdfasd sd
+            <div class="box">
+                <span class="title">TITLE</span><br>
+                asdfasdfasdf asdf asd as asdf<br>asdfd asdf asdf asdfasdf sd
             </div>
-            <div class="box" style="background-color:orangered">
-                <font size=4><strong>TITLE</strong></font><br>
-                asdfasdfasdf asdf asd as asdfaasdf<br>
-                asdf asdf asdfasd sd
+            <div class="box">
+                <span class="title">TITLE</span><br>
+                asdfasdfasdf asdf asd as asdf<br>asdfd asdf asdf asdfasdf sd
             </div>
-            <div class="box" style="background-color:rgb(97, 70, 44)">3</div>
-            <div class="box" style="background-color:orangered">4</div>
-            <div class="box" style="background-color:rgb(97, 70, 44)">5</div>
-            <div class="box" style="background-color:orangered">6</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
         </div>
         <div class="box_right">7</div>
     </div>
