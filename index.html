@@ -9,21 +9,31 @@
             text-align: center;
         }
 
-        #header>a {
-            display: inline-block;
-            margin-top: 27px;
-            padding: 50px;
-            color: black;
-            text-decoration-line: none;
+        ul.links {
+            list-style-type: none;
+            white-space: nowrap;
+            padding: 0px;
         }
 
-        #header>#logo_img {
+        .links .menu {
+            width: 160px; height: 82px;
+            display: inline-block;
+            margin-top: 27px;
+        }
+
+        .links .img {
             display: inline-block;
             margin-top: 0px;
             padding: 33px;
         }
 
-        #header>a:hover {
+        .links a {
+            color: black;
+            text-decoration-line: none;            
+        
+        }
+
+        #header a:hover {
             color: red;
             text-decoration: underline;
         }
@@ -38,10 +48,18 @@
             text-align: center;
         }
 
+        .icon_title_text > .phrase1 {
+            font-size: 8px;
+        }
+
+        .icon_title_text > .phrase2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
         .icon_box {
-            width: 1240px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 1240px; 
+            margin: 0 auto;
             text-align: center;
         }
 
@@ -78,21 +96,22 @@
 
 <body>
     <div id="header">
-        <a id="How_it_works" href="#">How it works</a>
-        <a id="Gifts" href="#">Gifts</a>
-        <a id="about" href="about.html">About</a>
-        <div id="logo_img"><img src="logo.png"></div>
-        <a id="Login" href="#">Login</a>
-        <a id="Members" href="#">Members</a>
-        <a id="Contacts" href="#">Contacts</a>
+        <ul class="links">
+            <li class="menu"><a href="#">How it works</a></li>
+            <li class="menu"><a href="#">Gifts</a></li>
+            <li class="menu"><a href="about.html">About</a></li>
+            <li class="img"><img src="logo.png"></li>
+            <li class="menu"><a href="#">Login</a></li>
+            <li class="menu"><a href="#">Members</a></li>
+            <li class="menu"><a href="#">Contacts</a></li>
+        </ul>
     </div>
     <div id="main_picture">
         <img src="main.png">
     </div>
     <p class="icon_title_text">
-        <font size=1>"WHAT'S FOR DINNER"</font><br>
-        <font size=4><strong>FINALLY HAS AN<br>
-                EASY ANSWER</strong></font>
+        <span class="phrase1">"WHAT'S FOR DINNER"</span><br>
+        <span class="phrase2">FINALLY HAS AN<br>EASY ANSWER</span>
     </p>
     <div class="icon_box">
         <p>
@@ -115,7 +134,7 @@
             <font size=2>asdfasdfasdfasdfasdf asdf a
                 asdfasdfsdfsdfasd asdf sdf sdas s
                 asdfsdfsdfsdfsdf<br><br></font>
-            </p>
+        </p>
     </div>
     <div class="chefs">
         <div>
